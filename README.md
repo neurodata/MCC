@@ -5,7 +5,7 @@
 
 Reproducible code for the results shown in our manuscript [*Multiscale Comparative Connectomics*](https://arxiv.org/abs/2011.14990) (`MCC`).
 
-## Organization
+## Reproducing Figures
 
 ### Main Results
 
@@ -44,5 +44,6 @@ hyppo
 ### R Dependencies
 `MCC` depends on R <ADD VERSION NUMBER> and the following libraries
 ```
+ComplexHeatmap
 <ADD R DEPENDENCIES>
 ```
