@@ -1,7 +1,0 @@
-{
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true,
-    "python.pythonPath": "/Users/vivek/miniconda3/envs/mcc/bin/python",
-    "python.formatting.blackPath": "/Users/vivek/miniconda3/envs/mcc/bin/black"
-}
