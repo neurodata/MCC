@@ -23,7 +23,7 @@ Scripts to reproduce the figures in `MCC` are organized below.
 
 #### Figure 5: _Whole-brain embeddings of all mouse connectomes in a low-dimensional space._
 
-#### Figure 6: _Our methods uncover more information about network topology than brain anatomy._
+#### Figure 6: _Our methods uncover more information about network topology than neuroanatomical metrics._
 
 ### Supplementary Results
 
