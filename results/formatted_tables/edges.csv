@@ -1,0 +1,21 @@
+Vertex 1,Vertex 2,statistic,p-value
+Corpus Callosum (L),Striatum (R),0.717,0.054
+Corpus Callosum (L),Internal Capsule (R),0.699,0.073
+Corpus Callosum (L),Reticular Nucleus of Thalamus (R),0.698,0.074
+Corpus Callosum (L),Zona Incerta (R),0.686,0.092
+Septum (R),Corpus Callosum (R),0.671,0.118
+Lateral Ventricle (L),Striatum (R),0.667,0.125
+Striatum (L),Striatum (R),0.664,0.132
+Corpus Callosum (L),Ventral Thalamic Nuclei (R),0.663,0.133
+Hippocampus (L),Middle Cerebellar Peduncle (L),0.658,0.144
+Caudomedial Entorhinal Cortex (R),Ventral Hippocampal Commissure (R),0.656,0.150
+Corpus Callosum (L),Midbrain Reticular Nucleus (R),0.653,0.159
+Midbrain Reticular Nucleus (L),Superior Cerebellar Peduncle (L),0.648,0.172
+Corpus Callosum (L),Corpus Callosum (R),0.646,0.179
+Spinal Trigeminal Nerve (L),Middle Cerebellar Peduncle (L),0.645,0.180
+Secondary Visual CortexLateral Area (L),Striatum (R),0.641,0.192
+Globus Pallidus (R),Midbrain Reticular Nucleus (R),0.632,0.225
+Striatum (L),Corpus Callosum (R),0.632,0.226
+Primary Somatosensory Cortex Hindlimb Region (L),Secondary Visual Cortex Mediomedial Area (L),0.629,0.236
+Corpus Callosum (L),Primary Somatosensory Cortex Jaw Region (R),0.628,0.238
+Corpus Callosum (L),Ventral Orbital Cortex (R),0.628,0.240

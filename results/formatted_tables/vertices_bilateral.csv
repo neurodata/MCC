@@ -1,0 +1,11 @@
+name,left_pval,left_rank,right_pval,right_rank,avg_rank
+Corpus Callosum,5.09e-25,1,1.09e-23,2,1.5
+Secondary Motor Cortex,8.21e-20,4,3.4e-16,8,6.0
+Internal Capsule,6.71e-15,10,2.29e-16,7,8.5
+Fimbria,7.27e-20,3,1.71e-12,28,15.5
+Stria Terminalis,1.11e-13,18,3.59e-14,13,15.5
+Lateral Ventricle,1.74e-14,12,1.07e-12,23,17.5
+Ventral Tegmental Area,4.18e-12,30,1.04e-12,22,26.0
+Hippocampus,6.62e-11,44,1.08e-13,17,30.5
+Globus Pallidus,8.49e-11,46,1.12e-12,25,35.5
+Cerebral Peduncle,5.79e-10,63,4.34e-15,9,36.0
