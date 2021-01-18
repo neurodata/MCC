@@ -45,13 +45,24 @@ Scripts to reproduce the figures in `MCC` are organized below.
 
 `MCC` depends on Python 3.6+ and the following libraries
 ```
-graspologic > 0.3
-hyppo
+graspologic @ git+git://github.com/microsoft/graspologic@dev
+ipykernels
+rpy2
+scikit-image
+statsmodels
 ```
 
 ### R Dependencies
 `MCC` depends on R <ADD VERSION NUMBER> and the following libraries
 ```
+cdcsis
 ComplexHeatmap
-<ADD R DEPENDENCIES>
+circlize
+data.table
+future
+future.apply
+ggplot2
+igraph
+mltools
+tidyverse
 ```
