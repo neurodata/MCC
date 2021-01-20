@@ -11,4 +11,5 @@ function execute_nb {
         --execute $1
 }
 
-execute_nb 4-strong-signal-components/identifying_signal_components.ipynb
+execute_nb 4a_identifying_signal_components.ipynb
+execute_nb 4b_format_signal_components_tables.ipynb
