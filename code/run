@@ -13,6 +13,7 @@ function execute_nb {
 
 execute_nb 1_statistical_framework_graphs.ipynb
 execute_nb 2_plot_adjacency_matrices.ipynb
+execute_nb 3_cc_emedding.ipynb
 execute_nb 4a_identifying_signal_components.ipynb
 execute_nb 4b_format_signal_components_tables.ipynb
 execute_nb 5_whole_brain_emedding.ipynb
