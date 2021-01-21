@@ -26,30 +26,33 @@ Alternatively, execute `code/run` to generate all figures at once.
 
 ## System Requirements
 
-### Python Dependencies
-
-`MCC` depends on Python 3.8 and the following libraries:
+`MCC` depends on Python 3.8, R 3.6.1, and the following libraries:
 ```
+# Conda Python packages
+jupyter==1.0.0
+rpy2==3.3.6
+statsmodels==0.12.1
+
+# Pip install the latest version of graspologic
 graspologic @ git+git://github.com/microsoft/graspologic@dev
-ipykernels
-rpy2
-scikit-image
-statsmodels
-```
 
-### R Dependencies
-`MCC` depends on R 3.6.3 and the following libraries:
-```
-cdcsis
-ComplexHeatmap
-circlize
-data.table
-future
-future.apply
-ggplot2
-igraph
-mltools
-tidyverse
+# Conda R packages
+r-base==3.6.1
+bioconductor-complexheatmap==2.2.0
+r-cairo==1.5_10
+r-circlize==0.4.12
+r-data.table==1.12.2
+r-essentials==3.6.0
+r-future==1.21.0
+r-future.apply==1.7.0
+r-ggplot2==3.1.1
+r-globaloptions==0.1.2
+r-igraph==1.2.4.1
+r-mltools==0.3.5
+r-tidyverse==1.2.1
+
+# CRAN R packages
+cdcsis==2.0.3
 ```
 
 ## Reproducing Figures
