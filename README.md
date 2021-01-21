@@ -26,7 +26,8 @@ Alternatively, execute `code/run` to generate all figures at once.
 
 ## System Requirements
 
-`MCC` depends on Python 3.8, R 3.6.1, and the following libraries:
+`MCC` uses both Python 3.8 and R 3.6.1.
+The analyses above depend on the following packages:
 ```
 # Conda Python packages
 jupyter==1.0.0
