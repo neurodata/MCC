@@ -56,42 +56,49 @@ r-tidyverse==1.2.1
 cdcsis==2.0.3
 ```
 
+These analyses have been tested on macOS x64 and Linux x64.
+
+### Installation Instructions
+We created a computational environment with these packages using a dedicated [Miniconda](https://docs.conda.io/en/latest/miniconda.html) kernel.
+It takes about 5 min to install all packages. 
+
 ## Reproducing Figures
 
 Scripts to reproduce the figures in `MCC` are organized below.
 
 #### Figure 1
-- Run `code/1_statistical_framework_graphs.ipynb`
+- Run `code/1_statistical_framework_graphs.ipynb` (expected runtime: 5 seconds)
 - This script uses `igraph` to generate the sample connectomes and graph models seen above
 ![Fig1](code/figures/1_framework.jpg)
 
 
 #### Figure 2
-- Run `code/2_plot_adjacency_matrices.ipynb`
+- Run `code/2_plot_adjacency_matrices.ipynb` (expected runtime: 5 seconds)
 - This script uses `ComplexHeatmap` to generate average connectomes for each mouse strain
 ![Fig2](code/figures/2_connectome.jpg)
 
 #### Figure 3
-- Run `code/3_cc_emedding.ipynb`
+- Run `code/3_cc_emedding.ipynb` (expected runtime: 5 seconds)
 - This script uses `graspologic` to embed the corpus callosum brain region of every mouse in a low-dimensional space
 ![Fig3](code/figures/3_corpus_callosum_embedding.jpg)
 
 #### Figure 4
-- Run `code/4a_identifying_signal_components.ipynb`
+- Run `code/4a_identifying_signal_components.ipynb` (expected runtime: 2 min)
 - This script uses `graspologic` and various *k*-sample hypothesis testing packages to identify the strongest signal edges, vertices, and communities
 ![Fig4](code/figures/4_signal_tractograms.jpg)
 
 #### Tables 1-4
-- Run `code/4b_format_signal_components_tables.ipynb`
+- Run `code/4b_format_signal_components_tables.ipynb` (expected runtime: 30 seconds)
 - This script uses `pandas` to nicely format the results generated for Figure 4 into publication-ready tables
+- Tables are found in the Supplement of the `MCC` manuscript
 
 #### Figure 5
-- Run `code/5_whole_brain_emedding.ipynb`
+- Run `code/5_whole_brain_emedding.ipynb` (expected runtime: 5 seconds)
 - This script uses classical multidimensional scaling (cMDS) to embed the results of the omnibus embedding in a low-dimensional space
 ![Fig5](code/figures/5_whole_brain_embedding.jpg)
 
 #### Figure 6
-- Run `code/6_conditional_independence_anatomy.ipynb`
+- Run `code/6_conditional_independence_anatomy.ipynb` (expected runtime: 5 hours on a 48 core CPU, around 40 hours on a normal desktop computer)
 - This script uses `cdcsis` to compute a bunch of conditional independence tests
 - The purpose of this test is to determine if our methods recover information about network topology not encoded in neuroanatomy
 ![Fig6](code/figures/6_causal.jpg)
