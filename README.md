@@ -10,8 +10,8 @@ Reproducible code for the results shown in our manuscript [*Multiscale Comparati
 
 ## Table of Figures and Tables
 
-Click each link for individual instructions on how to generate each figure.
-Alternatively, execute `code/run` to generate all figures at once.
+Click any link for individual instructions on how to generate that specific figure.
+Alternatively, execute the file `code/run` to generate all figures at once.
 
 #### [Figure 1: _Overview of the statistical framework for multiscale comparative connectomics._](#figure-1)
 
