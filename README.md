@@ -27,7 +27,7 @@ Alternatively, execute the file `code/run` to generate all figures at once.
 
 ## System Requirements
 
-`MCC` uses both Python 3.8 and R 3.6.1.
+`MCC` uses both `Python [3.8]` and `R [3.6.1]`.
 The analyses above depend on the following packages:
 ```
 # Conda Python packages
