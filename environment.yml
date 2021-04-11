@@ -6,21 +6,22 @@ channels:
   - bioconda
 dependencies:
   - python=3.8
+  - jupyter=1.0.0
   - ipykernel
   - nb_conda_kernels
-  - rpy2
-  - scikit-image
-  - statsmodels
-  - r-base=3.6.3
-  - r-circlize
-  - r-data.table
-  - r-future
-  - r-future.apply
-  - r-ggplot2
-  - r-igraph
-  - r-mltools
-  - r-tidyverse
+  - rpy2=3.3.6
+  - statsmodels=0.12.1
+  - r-base=3.6.1
+  - r-circlize=0.4.12
+  - r-data.table=1.12
+  - r-essentials=3.6.0
+  - r-future=1.21.0
+  - r-future.apply=1.7.0
+  - r-ggplot2=3.1.1
+  - r-globaloptions=0.1.2
+  - r-igraph=1.2.4
+  - r-mltools=0.3.5
+  - r-tidyverse=1.2.1
   - bioconductor-complexheatmap
   - pip:
       - graspologic @ git+git://github.com/microsoft/graspologic@9c65548b7ead45d620e71d2b08763f83555262c0
-      - nb-black

@@ -60,7 +60,10 @@ cdcsis==2.0.3
 These analyses have been tested on macOS x64 and Linux x64.
 
 ### Installation Instructions
-We created a computational environment with these packages using a dedicated [Miniconda](https://docs.conda.io/en/latest/miniconda.html) kernel.
+We created a computational environment with these packages using a dedicated [Miniconda](https://docs.conda.io/en/latest/miniconda.html) kernel:
+```
+conda env create --file environment.yml --name mcc
+```
 It takes about 5 min to install all packages. 
 
 ## Reproducing Figures
