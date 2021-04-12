@@ -102,7 +102,7 @@ Scripts to reproduce the figures in `MCC` are organized below.
 ![Fig5](code/figures/5_whole_brain_embedding.jpg)
 
 #### Figure 6
-- Run `code/6_conditional_independence_anatomy.ipynb` (expected runtime: 5 hours on a 48 core CPU, around 40 hours on a normal desktop computer)
+- Run `code/6_conditional_independence_anatomy.ipynb` (expected runtime: 5 hours on a 48 core machine, probably much longer on a normal laptop)
 - This script uses `cdcsis` to compute a bunch of conditional independence tests
 - The purpose of this test is to determine if our methods recover information about network topology not encoded in neuroanatomy
 ![Fig6](code/figures/6_causal.jpg)
