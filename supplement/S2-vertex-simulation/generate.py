@@ -71,6 +71,7 @@ def generate_graphs_4(
     X1 = np.array([p, p])
     X2 = rotate(X1, initial_angle)
     X3 = rotate(X1, second_angle)
+    X3 = stretch(X3, effect_size / 2)
 
     X, Y = get_latent_positions(X1, X2, X3, block_size)
 
