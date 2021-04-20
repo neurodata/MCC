@@ -52,8 +52,8 @@ n_nodes = 50
 block_2s = np.array([0, 5, 10, 15, 20, 25])
 block_1s = 50 - block_2s
 block_sizes = list(zip(block_1s, block_2s))
-effect_size = 0.5
-second_angle = 65.0
+effect_size = 0.4
+second_angle = 70.0
 sample_size = 200
 p = 0.25
 
