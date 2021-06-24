@@ -1,11 +1,11 @@
 Community 1,Community 2,statistic,holm_pvalue
-White Matter (R),White Matter (R),0.888,6.14e-06
-Hindbrain (R),White Matter (R),0.872,7.87e-06
-White Matter (L),White Matter (L),0.871,8.02e-06
-Subpallium (R),White Matter (R),0.852,1.07e-05
-Hindbrain (L),White Matter (L),0.848,1.14e-05
-Isocortex (L),Isocortex (L),0.844,1.21e-05
-Isocortex (R),White Matter (R),0.825,1.64e-05
-Isocortex (L),White Matter (L),0.810,2.09e-05
-Hindbrain (L),White Matter (R),0.809,2.09e-05
-White Matter (L),Midbrain (R),0.809,2.09e-05
+White Matter (R),White Matter (R),0.885,6.43e-06
+White Matter (L),White Matter (L),0.857,1.02e-05
+Hindbrain (L),White Matter (L),0.849,1.14e-05
+Midbrain (R),White Matter (R),0.845,1.21e-05
+Isocortex (L),Isocortex (L),0.844,1.22e-05
+Pallium (R),White Matter (R),0.831,1.5e-05
+Isocortex (R),White Matter (R),0.823,1.68e-05
+Isocortex (R),Isocortex (R),0.819,1.8e-05
+Isocortex (L),White Matter (L),0.811,2.02e-05
+Hindbrain (R),White Matter (R),0.810,2.02e-05

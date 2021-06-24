@@ -1,21 +1,21 @@
 Vertex,Pillai,"F(15, 78)",p-value
-Corpus Callosum (L),2.591,32.914,5.09e-25
-Corpus Callosum (R),2.556,29.951,1.09e-23
-Fimbria (L),2.440,22.637,7.27e-20
-Secondary Motor Cortex (L),2.438,22.544,8.21e-20
-Midbrain Reticular Nucleus (R),2.430,22.161,1.38e-19
-Substantia Nigra (R),2.305,17.254,2.2e-16
-Internal Capsule (R),2.304,17.229,2.29e-16
-Secondary Motor Cortex (R),2.297,16.989,3.4e-16
-Cerebral Peduncle (R),2.247,15.511,4.34e-15
-Internal Capsule (L),2.238,15.266,6.71e-15
-Striatum (L),2.236,15.230,7.13e-15
-Lateral Ventricle (L),2.218,14.739,1.74e-14
-Stria Terminalis (R),2.202,14.349,3.59e-14
-Cerebellar White Matter (R),2.199,14.278,4.08e-14
-Optic Tracts (L),2.186,13.956,7.52e-14
-Subthalamic Nucleus (L),2.178,13.781,1.05e-13
-Hippocampus (R),2.177,13.764,1.08e-13
-Stria Terminalis (L),2.177,13.747,1.11e-13
-Frontal Association Cortex (L),2.170,13.601,1.47e-13
-Rostral Linear Nucleus (R),2.165,13.473,1.88e-13
+Corpus Callosum (L),2.592,33.026,4.47e-25
+Corpus Callosum (R),2.550,29.501,1.75e-23
+Secondary Motor Cortex (L),2.438,22.578,7.73e-20
+Midbrain Reticular Nucleus (R),2.435,22.429,9.43e-20
+Fimbria (L),2.424,21.902,1.94e-19
+Substantia Nigra (R),2.299,17.049,3.04e-16
+Secondary Motor Cortex (R),2.298,17.034,3.1e-16
+Internal Capsule (R),2.297,17.003,3.26e-16
+Striatum (L),2.259,15.854,2.32e-15
+Cerebral Peduncle (R),2.229,15.036,9.98e-15
+Internal Capsule (L),2.219,14.775,1.6e-14
+Stria Terminalis (R),2.209,14.514,2.59e-14
+Cerebellar White Matter (R),2.204,14.409,3.14e-14
+Optic Tracts (L),2.194,14.166,4.95e-14
+Hippocampus (R),2.185,13.952,7.43e-14
+Subthalamic Nucleus (L),2.176,13.738,1.12e-13
+Frontal Association Cortex (L),2.175,13.702,1.19e-13
+Stria Terminalis (L),2.174,13.679,1.25e-13
+Retro Rubral Field (R),2.167,13.537,1.64e-13
+Rostral Linear Nucleus (R),2.159,13.350,2.35e-13
