@@ -1,0 +1,36 @@
+Vertex,statistic,p-value
+Substantia Nigra (L),0.855,3.28e-05
+Middle Cerebellar Peduncle (R),0.852,3.45e-05
+Internal Capsule (L),0.851,3.5e-05
+Substantia Nigra (R),0.845,3.84e-05
+Pontine Reticular Nucleus (R),0.840,4.14e-05
+Pontine Reticular Nucleus (L),0.838,4.25e-05
+Parasubiculum (L),0.838,4.25e-05
+Ventral Tegmental Area (R),0.837,4.32e-05
+Retro Rubral Field (L),0.829,4.91e-05
+Fastigial Medial Nucleus of Cerebellum (R),0.824,5.3e-05
+Cerebral Peduncle (R),0.819,5.74e-05
+Cerebral Peduncle (L),0.818,5.87e-05
+Fastigial Medial Nucleus of Cerebellum (L),0.814,6.23e-05
+Fimbria (L),0.813,6.28e-05
+Brain Stem Rest (L),0.811,6.46e-05
+Cingulate Cortex Area 30 (L),0.810,6.6e-05
+Ventral Tegmental Area (L),0.806,6.99e-05
+Globus Pallidus (R),0.802,7.46e-05
+Internal Capsule (R),0.797,8.09e-05
+Subthalamic Nucleus (R),0.792,8.78e-05
+Zona Incerta (R),0.783,0.000102
+Parabrachial Nucleus (L),0.783,0.000102
+Globus Pallidus (L),0.781,0.000104
+Insular Cortex (R),0.780,0.000106
+Brain Stem Rest (R),0.777,0.00011
+Secondary Visual Cortex Mediolateral Area (R),0.777,0.00011
+Inferior Colliculus (R),0.776,0.000111
+Superior Cerebellar Peduncle (L),0.775,0.000113
+Retro Rubral Field (R),0.773,0.000117
+Stria Terminalis (L),0.772,0.000118
+Postsubiculum (R),0.769,0.000123
+Midbrain Reticular Nucleus (L),0.768,0.000125
+Striatum (R),0.768,0.000125
+Primary Visual Cortex Binocular Area (R),0.768,0.000125
+Corpus Callosum (L),0.767,0.000125
