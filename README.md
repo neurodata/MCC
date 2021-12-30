@@ -60,11 +60,12 @@ cdcsis==2.0.3
 These analyses have been tested on macOS x64 and Linux x64.
 
 ### Installation Instructions
-We created a computational environment with these packages using a dedicated [Miniconda](https://docs.conda.io/en/latest/miniconda.html) kernel:
+We created a computational environment with these packages using a dedicated [Miniconda](https://docs.conda.io/en/latest/miniconda.html) kernel (should take about 5 mins to setup):
 ```
 conda env create --file environment.yml --name mcc
 ```
-It takes about 5 min to install all packages. 
+
+To get `rpy2` running on an M1 Mac, it's currently necessary to [install it in API mode](https://github.com/rpy2/rpy2/issues/790): `RPY2_CFFI_MODE=API pip install rpy2`.
 
 ## Reproducing Figures
 

@@ -1,4 +1,4 @@
-Community 1,Community 2,statistic,pvalue,holm_pvalue,significant
+Community 1,Community 2,statistic,pvalue,holm_pvalue,bh_significant
 White Matter (R),White Matter (R),0.8850765034031062,6.12816498182344e-08,6.434573230914612e-06,True
 White Matter (L),White Matter (L),0.8566703391412275,9.798217161754916e-08,1.0190145848225113e-05,True
 Hindbrain (L),White Matter (L),0.8491359510177378,1.1097867405858485e-07,1.143080342803424e-05,True
