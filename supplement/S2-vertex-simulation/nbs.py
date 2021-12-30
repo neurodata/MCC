@@ -53,7 +53,6 @@ def compute_nbs(X, Y, test, THRESH, K=1000, TAIL="both"):
         'equal' - alternative hypothesis is means are not equal (default)
         'left'  - mean of population X < mean of population Y
         'right' - mean of population X > mean of population Y
-
     Returns
     -------
     PVAL : ndarray
@@ -307,7 +306,6 @@ def setdiff2d(X, Y):
     ----------
     X, Y : ndarray
            (n,2) arrays representing indices
-
     Returns
     -------
     Z : ndarray
@@ -335,7 +333,6 @@ def intersect2d(X, Y):
     ----------
     X, Y : ndarray
            (n,2) arrays representing indices
-
     Returns
     -------
     Z : ndarray

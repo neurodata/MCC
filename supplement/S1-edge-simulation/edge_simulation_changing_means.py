@@ -1,16 +1,17 @@
 # %%
 import warnings
-from itertools import product
 from functools import partial
+from itertools import product
 
 import numpy as np
 import pandas as pd
 from graspologic.utils import symmetrize
-from joblib import Parallel, delayed
-from scipy.stats import ttest_ind, mannwhitneyu
 from hyppo.ksample import KSample
+from joblib import Parallel, delayed
+from scipy.stats import ks_2samp, mannwhitneyu, ttest_ind
+from tqdm import tqdm
 
-from src import generate_truncnorm_sbms, compute_pr_at_k
+from src import compute_pr_at_k, generate_truncnorm_sbms
 
 warnings.filterwarnings("ignore")
 
@@ -36,7 +37,7 @@ def compute_statistic(test, pop1, pop2):
                 elif test.__name__ == "test":
                     tmp, pval = KSample("Dcorr").test(x_ij, y_ij)
                 else:
-                    print(test.__name__, x_ij, y_ij)
+                    # print(test.__name__, x_ij, y_ij)
                     tmp, pval = test(x_ij, y_ij)
 
                 test_statistics[i, j] = tmp
@@ -90,7 +91,7 @@ def run_experiment(tests, m, block_1, block_2, mean_1, mean_2, var_1, var_2, ks,
 
 
 # %%
-tests = [ttest_ind, mannwhitneyu, KSample("Dcorr").test]
+tests = [ttest_ind, mannwhitneyu, ks_2samp, KSample("Dcorr").test]
 
 spacing = 100
 block_1 = 5
@@ -117,8 +118,7 @@ partial_func = partial(
     reps=reps,
 )
 
-res = Parallel(n_jobs=-1, verbose=5)(delayed(partial_func)(**arg) for arg in args)
-
+res = Parallel(n_jobs=-1, verbose=5)(delayed(partial_func)(**arg) for arg in tqdm(args))
 
 # %%
 new_res = []
