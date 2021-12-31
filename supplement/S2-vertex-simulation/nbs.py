@@ -117,11 +117,9 @@ class NBS:
         null = np.array(null)
 
         # Compute the p-value
-        significant_components = []
+        tested_components = []
         for c, size in zip(components, sizes):
             p = np.sum(null >= size) / len(null)
-            if p > 0.05:
-                continue
-            significant_components.append([p, c])
+            tested_components.append([p, c])
 
-        return significant_components
+        return tested_components
