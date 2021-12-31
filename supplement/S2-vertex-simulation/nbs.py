@@ -1,8 +1,26 @@
+from collections import defaultdict
+
 import networkx as nx
 import numpy as np
 from hyppo.independence import Dcorr
 from joblib import Parallel, delayed
 from scipy.stats import ttest_ind
+
+
+def test(X, Y, n_nodes, test, threshold):
+
+    nbs = NBS(test, threshold, X, Y)
+    components = nbs.compute()
+    nbs_pvalue = {node: pvalue for pvalue, nodes in components for node in list(nodes)}
+
+    pvalues = defaultdict(list)
+    for node in range(n_nodes):
+        try:
+            pvalues[node].append(nbs_pvalue[node])
+        except:
+            pvalues[node].append(1)
+
+    return pvalues
 
 
 def ttest_statistic(sample):
@@ -49,7 +67,10 @@ class NBS:
 
         # Treshold the test statistics
         tresholded_edges = np.zeros((self.n_vertices_, self.n_vertices_))
-        rel_edges = np.where(stat_matrix >= self.threshold)
+        if self.test == ttest_statistic:
+            rel_edges = np.where(stat_matrix >= self.threshold)
+        elif self.test == dcorr_statistic:
+            rel_edges = np.where(stat_matrix <= self.threshold)
         tresholded_edges[rel_edges] = 1
         tresholded_edges = tresholded_edges + tresholded_edges.T
 
@@ -72,7 +93,7 @@ class NBS:
         largest_cc = max(nx.connected_components(G), key=len)
         return get_number_of_edges(G, largest_cc)
 
-    def compute(self, n_reps=1000):
+    def compute(self, n_reps=200):
         """
         Compute two-tailed network-based statistic (NBS). X, Y are stacks of
         graphs with shape (n_samples, n_vertices_, n_vertices_).
