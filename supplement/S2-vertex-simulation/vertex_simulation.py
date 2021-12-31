@@ -32,7 +32,7 @@ def experiment(
         pvalues_mdmr = pd.DataFrame.from_dict(test_mdmr(X, Y, n_nodes))
         pvalues_nx = pd.DataFrame.from_dict(test_nxstats(X, Y, n_nodes))
         pvalues_nbs_dcorr = pd.DataFrame.from_dict(
-            test_nbs(X, Y, n_nodes, dcorr_statistic, 0.1)
+            test_nbs(X, Y, n_nodes, dcorr_statistic, 0.00001)
         )
         pvalues_nbs_ttest = pd.DataFrame.from_dict(
             test_nbs(X, Y, n_nodes, ttest_statistic, 3.1)
@@ -82,7 +82,7 @@ def make_df(
 
 # %% Simulation parameters
 n_nodes = 50
-block_2s = np.array([0, 5, 10, 15, 20, 25])
+block_2s = np.array([5, 10, 15, 20, 25])
 block_1s = 50 - block_2s
 block_sizes = list(zip(block_1s, block_2s))
 effect_size = 0.4
