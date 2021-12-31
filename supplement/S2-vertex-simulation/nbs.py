@@ -28,6 +28,7 @@ def ttest_statistic(sample):
 
 
 def dcorr_statistic(sample):
+    sample = [X.reshape(-1, 1) for X in sample]
     return Dcorr().statistic(*sample)
 
 
@@ -70,7 +71,9 @@ class NBS:
         if self.test == ttest_statistic:
             rel_edges = np.where(stat_matrix >= self.threshold)
         elif self.test == dcorr_statistic:
-            rel_edges = np.where(stat_matrix <= self.threshold)
+            rel_edges = np.where(
+                np.logical_and(0 < stat_matrix, stat_matrix <= self.threshold)
+            )
         tresholded_edges[rel_edges] = 1
         tresholded_edges = tresholded_edges + tresholded_edges.T
 
