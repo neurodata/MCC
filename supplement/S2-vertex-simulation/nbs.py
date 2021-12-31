@@ -107,8 +107,13 @@ class NBS:
 
         # Identify connectected components with at least 1 edge
         G = nx.from_numpy_array(stat_matrix)
-        components = list(nx.connected_components(G))
-        sizes = [get_number_of_edges(G, c) for c in components]
+        components = []
+        sizes = []
+        for c in list(nx.connected_components(G)):
+            size = get_number_of_edges(G, c)
+            if size > 0:
+                components.append(c)
+                sizes.append(size)
 
         # Get a null distribution for max component sizes
         null = Parallel(n_jobs=-1)(
@@ -119,7 +124,10 @@ class NBS:
         # Compute the p-value
         tested_components = []
         for c, size in zip(components, sizes):
-            p = np.sum(null >= size) / len(null)
-            tested_components.append([p, c])
+            if self.test == ttest_statistic:
+                p = np.sum(null >= size) / len(null)
+            elif self.test == dcorr_statistic:
+                p = np.sum(null <= size) / len(null)
+            tested_components.append((p, c))
 
         return tested_components
