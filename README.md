@@ -65,7 +65,7 @@ We created a computational environment with these packages using a dedicated [Mi
 conda env create --file environment.yml --name mcc
 ```
 
-To get `rpy2` running on an M1 Mac, it's currently necessary to [install it in API mode](https://github.com/rpy2/rpy2/issues/790): `RPY2_CFFI_MODE=API pip install rpy2`.
+To get `rpy2` running on an M1 Mac, it's currently necessary to [install it in API mode](https://github.com/rpy2/rpy2/issues/790): `RPY2_CFFI_MODE=API pip install rpy2`. Also, it might be easier to install the `R` packages directly through the scripting interface instead of through conda since many compatibility conflicts haven't been resolved for new arm64 versions.
 
 ## Reproducing Figures
 
