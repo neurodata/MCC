@@ -24,4 +24,4 @@ dependencies:
   - r-tidyverse=1.2.1
   - bioconductor-complexheatmap
   - pip:
-      - graspologic @ git+git://github.com/microsoft/graspologic@9c65548b7ead45d620e71d2b08763f83555262c0
+      - graspologic
